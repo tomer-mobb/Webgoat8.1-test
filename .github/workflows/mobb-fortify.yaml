@@ -51,6 +51,9 @@ jobs:
           chmod +x bin/scancentral
           wget https://github.com/fod-dev/fod-uploader-java/releases/download/v5.4.0/FodUpload.jar -O FodUpload.jar
 
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v2
+
       - name: Run Fortify SAST scan
         run: |
           ./bin/scancentral package -bt mvn -o fortify_package.zip
