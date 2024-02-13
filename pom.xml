@@ -15,7 +15,7 @@
 
     <organization>
         <name>OWASP</name>
-        <url>https://webgoat.github.io/</url>
+        <url>https://webgoat.github.io/</url> 
     </organization>
 
     <parent>
